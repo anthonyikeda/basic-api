@@ -1,0 +1,17 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: maven
+    tag: latest
+
+inputs:
+  - name: basic-api-code
+
+outputs:
+  - name: basic-api-jar
+
+run:
+  path: basic-api-code/ci/build.sh

@@ -5,8 +5,4 @@ git clone basic-api-code basic-api
 
 cd basic-api
 
-mvn clean
-
-mvn install
-
-mvn deploy
+mvn clean deploy

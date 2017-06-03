@@ -4,7 +4,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>basic-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>demo</name>
@@ -25,7 +25,8 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/anthonyikeda/basic-api.git</developerConnection>
-    </scm>
+      <tag>basic-api-0.0.1</tag>
+  </scm>
     
 	<dependencies>
 		<dependency>

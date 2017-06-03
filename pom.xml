@@ -24,7 +24,7 @@
 	</properties>
 
     <scm>
-        <developerConnection>scm:git:[fetch=]https://github.com/anthonyikeda/basic-api.git[push=]ssh://git@github.com:anthonyikeda/basic-api.git</developerConnection>
+        <developerConnection>scm:git:[fetch=]https://github.com/anthonyikeda/basic-api.git[push=]ssh://git@github.com/anthonyikeda/basic-api.git</developerConnection>
       <tag>RELEASE</tag>
   </scm>
     

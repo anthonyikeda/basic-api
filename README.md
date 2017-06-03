@@ -172,3 +172,41 @@ Uploaded: http://192.168.99.100:8081/repository/local-snapshots/com/example/basi
 ```
 
 # Release the artifact
+
+## Prepare the release
+
+```bash
+$ ./mvnw -Dusername=anthonyikeda release: prepare
+...
+[INFO] Release preparation complete.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 37.709 s
+[INFO] Finished at: 2017-06-03T11:31:15-07:00
+[INFO] Final Memory: 17M/236M
+[INFO] ------------------------------------------------------------------------
+
+$ ./mvnw -Dusername=anthonyikeda release:perform
+[INFO] Uploaded: http://192.168.99.100:8081/repository/local-releases/com/example/basic-api/maven-metadata.xml (300 B at 4.0 kB/s)
+[INFO] [INFO]  * Bulk deploy of locally gathered snapshot artifacts finished.
+[INFO] [INFO] Remote deploy finished with success.
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] BUILD SUCCESS
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Total time: 30.796 s
+[INFO] [INFO] Finished at: 2017-06-03T11:33:43-07:00
+[INFO] [INFO] Final Memory: 44M/467M
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] Cleaning up after release...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42.151 s
+[INFO] Finished at: 2017-06-03T11:33:44-07:00
+[INFO] Final Memory: 15M/242M
+[INFO] ------------------------------------------------------------------------
+
+```
+
+(There is no need to store the release.properties in the SCM)

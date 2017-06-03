@@ -8,3 +8,5 @@ cd basic-api
 mvn clean
 
 mvn install
+
+mvn deploy

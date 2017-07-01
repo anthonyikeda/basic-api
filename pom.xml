@@ -122,5 +122,10 @@
 		</snapshotRepository>
 	</distributionManagement>
 
-
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jcenter</id>
+			<url>https://jcenter.bintray.com</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
